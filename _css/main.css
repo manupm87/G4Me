@@ -15,7 +15,7 @@ body{
 	font-family: Arial,Helvetica,sans-serif;
 	overflow-x: auto;
 	overflow-y: scroll;
-	background-color: rgb(78, 78, 78)
+	background-color: rgb(78, 78, 78);
 }
 
 header, footer {
@@ -67,12 +67,12 @@ footer {
 #authentication{
 	margin-top: 6px;
 }
-#authentication > div{
+#authentication > a{
 	display: inline;
 	margin-left: 12px;
 	cursor: pointer;
 }
-#authentication > div:hover{
+#authentication > a:hover{
 	color: rgb(0, 169, 255);
 }
 #navigation{

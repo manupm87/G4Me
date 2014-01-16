@@ -1,23 +1,104 @@
+#exposeMask{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1586px;
+	height: 4084px;
+	display: block;
+	opacity: 0.9;
+	z-index: 9998;
+	background-color: rgb(78, 78, 78);
+}
 .modal {
-	background-color:#fff;
+	background: #fff url(../_img/bg_form.jpg) repeat-x top left;
 	display:none;
 	width:350px;
 	padding:15px;
 	text-align:left;
 	border:2px solid #333;
+	z-index: 9999;
 	
-	opacity:0.8;
+	color:black;
+	
+	opacity:0.9;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	-moz-box-shadow: 0 0 50px #ccc;
 	-webkit-box-shadow: 0 0 50px #ccc;
  }
  
- .modal h2 {
-	background:url(/media/img/global/info.png) 0 50% no-repeat;
-	margin:0px;
-	padding:10px 0 10px 45px;
-	border-bottom:1px solid #333;
-	font-size:20px;
+.modal h2 {
+	font-size: 18px;
+	color: #555555;
+	text-shadow: 0 1px 0 #fff;
+	filter: dropshadow(color=#fff, offx=0, offy=1);
+	margin-bottom: 24px;
 }
-  
+.modal p {
+	margin:0px;
+	padding:0px 0px 5px 0px;
+	font-size:12px;
+}
+
+#modalLogIn label{
+	display: none;
+}
+#modalLogIn form div{
+	
+	margin-bottom: 10px;
+	background-color: white
+}
+#modalLogIn form div input{
+	direction: ltr;
+	height: 44px;
+	font-size: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	display: inline-block;
+	height: 36px;
+	padding: 0 8px;
+	margin: 0;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	font-size: 15px;
+	color: #404040;
+}
+
+#modalLogIn input:hover{
+	border: 1px solid #b9b9b9;
+	border-top: 1px solid #a0a0a0;
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+#logInBtns{
+	text-align: right;
+}
+#logInBtns button{
+	font-size: larger;
+	background: url(../_img/login.png) no-repeat;
+	width: 82px;
+	height: 32px;
+	border: 0px;
+	float: right;
+	
+}
+
+#logInBtns button:hover{
+	background: url(../_img/login_hover.png) no-repeat;
+	width: 82px;
+	height: 32px;
+	border: 0px;
+	
+}

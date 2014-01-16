@@ -31,12 +31,12 @@
 				</div>
 				<div id="header_links">
 					<div id="authentication">
-						<div id="logIn" class="modalInput" >
+						<a id="logIn" class="modalInput" rel="#modalLogIn">
 							Log in
-						</div>
-						<div id="signIn" class="modalInput">
+						</a>
+						<a id="signIn" class="modalInput">
 							Sign in
-						</div>
+						</a>
 					</div>
 					<nav>
 						<div id="navigation">
@@ -56,22 +56,23 @@
 			
 			<!-- user log in dialog -->
 			<div class="modal" id="modalLogIn">
-				<h2>Log in</h2>
+				<h2>Login</h2>
 				<form>
 					<div>
-						<label><p>User or e-mail</p></label>
-						<input />
+						<label><p>Username or email</p></label>
+						<input id="Email" name="Email" type="email" placeholder="Username or email" value="" spellcheck="false" class=""/>
 					</div>
 					<div>
 						<label><p>Password</p></label>
-						<input type="password" />
+						<input id="Passwd" name="Passwd" type="password" placeholder="Password" class=""/>
 					</div>
-					<div>
-						<button type="submit"> OK </button>
-						<button type="button" class="close"> Cancel </button>
+					<div id="logInBtns">
+						<button type="submit"></button>
 					</div>
 				</form>
 			</div>
+			
+			<div id="exposeMask"></div>
 
 		</header>
 		

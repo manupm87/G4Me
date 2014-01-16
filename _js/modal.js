@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	$("#logIn").click(function(){
+	$("#exposeMask").hide();
+
+	/*$("#logIn").click(function(){
 		$("#modalLogIn").overlay({
 			// some mask tweaks suitable for modal dialogs
 		  	mask: {
@@ -8,9 +10,23 @@ $(document).ready(function(){
 			    opacity: 0.9
 			},
 	
-			closeOnClick: false,
+			closeOnClick: true,
 			load: true
 		});
+	});*/
+	$("#logIn").click(function(){
+		$("#exposeMask").fadeIn(200);
+	});
+	
+	var trigger = $(".modalInput").overlay({
+ 
+      // some mask tweaks suitable for modal dialogs
+      mask: 'darkred',
+      closeOnClick: true
+  });
+  $("#logInBtns").click(function(){
+		trigger.overlay().close();
+		$("#exposeMask").fadeOut(200);
 	});
 
 });
